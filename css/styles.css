@@ -183,6 +183,31 @@ article:nth-of-type(even) {
   height: 50%;
 }
 
+/*Style rules for form elements */
+fieldset, input, select, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+form #submit {
+  margin: 0 auto;
+  border: none;
+  display: block;
+  padding: 2%;
+  background-color: #7bafd4;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
 /* Style rules for footer content */
 footer p {
   font-size: 0.75em;
@@ -397,6 +422,21 @@ form {
   #events {
     clear: left;
   }
+
+  /*Desktop Viewport: Style rules for form elements */
+form {
+  width: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.btn {
+  grid-column: 1 / span 3;
+}
 
 }
 
